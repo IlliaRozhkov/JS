@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #dadada;
+}
+
+#container{
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    width: 90%;
+}
+
+#container > div{
+    position: absolute;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px 7px #868686;
+}
+
+#left{
+    left: 0px;
+    width: 60%;
+}
+#right{
+    right: 0px;
+    width: 30%;
+}
+
+#left > .header{
+    padding: 15px;
+}
+
+input#addInput{
+    float: left;
+    width: 80%;
+    line-height: 20px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    border-right: none;
+    border: 3px solid rgb(163, 163, 163);
+    outline: none !important;
+    border-right: none;
+}
+input#addInput:focus{
+    border-color: rgb(83, 83, 83);
+}
+button#addButton{
+    width: 20%;
+    line-height: 20px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    border: 3px solid #2185D0;
+    background-color: #2185D0;
+    color: white;
+}
+button#addButton:hover,
+button#addButton:active{
+    border: 3px solid #1b6dac;
+    background-color: #1b6dac;
+}
+
+div.product{
+    border-top: 2px solid #cacaca;
+    display: flex;
+}
+div.product > div{
+    display: inline-block;
+    line-height: 20px;
+    float: left;
+    font-size: 18px;
+    padding: 10px;
+}
+div.product *{
+    line-height: 20px;
+    font-size: 18px;
+}
+div.product > div.productName{
+    width: 30%;
+    text-align: left;
+    padding-top: 15px;
+}
+div.product > div.productQuantity{
+    width: 40%;
+    padding-top: 15px;
+    text-align: center;
+}
+div.product > div.productRight{
+    width: 30%;
+    text-align: right;
+}
+div.product > div.productRight button.buy{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+div.product > div.productRight button.buy:active,
+div.product > div.productRight button.buy:hover{
+    background-color: rgb(218, 218, 218);
+}
+div.product > div.productRight button.delete{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 79, 79);
+    border-color: rgb(255, 79, 79);
+    color: white;
+    margin-left: 5px;
+}
+div.product > div.productRight button.delete:hover,
+    div.product > div.productRight button.delete:active{
+    background-color: rgb(182, 0, 0);
+}
+
+
+div#right div.header{
+    font-size: 25px;
+    line-height: 35px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+div#right div.products{
+    padding: 10px;
+}
+
+.rightProduct {
+    padding: 5px;
+    margin: 5px;
+    background-color: #dddddd;
+    border-radius: 10px;
+    display: inline-block;
+}
+.rightProduct > span.name {
+    padding: 5px;
+    line-height: 20px;
+    font-size: 10px;
+}
+.rightProduct > span.quantity {
+    line-height: 20px;
+    border-radius: 10px;
+    font-size: 10px;
+    background-color: rgb(255, 123, 0);
+    color: white;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
