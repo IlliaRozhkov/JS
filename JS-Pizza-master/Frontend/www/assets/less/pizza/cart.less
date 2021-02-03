@@ -1,0 +1,81 @@
+#cart{
+    position: fixed;
+    height: 100%;
+    width: 350px;
+    background: white;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    .zag{
+        padding: 15px;
+        h2{
+            font-weight: 600;
+        }
+        small{
+            color: grey;
+        }
+    }
+    .card{
+        width: 100%;
+        float: left;
+        position: relative;
+        background: #f1f1f1;
+        border-bottom: 1px solid grey;
+        padding: 15px 20px;
+        h1{
+            margin: 0 0 10px 0;
+            color: @mainColor;
+        }
+        >div{
+            margin: 15px 0;
+            *{
+                float: left;
+            }
+            p{
+                font-size: 1.2em;
+                font-weight: 600;
+                line-height: 35px;
+            }
+            .minus, .plus{
+               width: 35px;
+               height: 35px; 
+               border-radius: 100px;
+               color: white;
+               text-align: center;
+               line-height: 35px;
+               font-size: 2em;
+               margin: 0 10px
+            }
+            .minus{
+                background: rgb(185, 23, 23);
+            }
+            .plus{
+                background: rgb(11, 114, 11);
+            }
+            b{
+                line-height: 35px;
+                font-size: 1.2em;
+            }
+            .delite{
+                margin-left: 25px;
+                background: white;
+                color: @mainColor;
+                font-weight: 600;
+                width: 35px;
+                height: 35px;
+                border-radius: 100px;
+                text-align: center;
+                line-height: 35px;
+                font-size: 1.5em;
+            }
+        }
+        .pizza{
+            position: absolute;
+            border-radius: 150px;
+            top: 15px;
+            height: 130px;
+            right: -18%;
+        }
+    }
+}
