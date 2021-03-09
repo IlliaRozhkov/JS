@@ -1,0 +1,10 @@
+<div class="card">
+    <%= pizza.title %> (<%= size %>)
+    <div>Ціна: <%= pizza[size].price %> грн.</div>
+    <div>
+        <button class="btn btn-danger minus">-</button>
+        <span class="label label-default"><%= quantity %></span>
+        <button class="btn btn-success plus">+</button>
+        <button class="btn btn-danger delete">X</button>
+    </div>
+</div>
